@@ -1,0 +1,56 @@
+/* NAVBAR */
+.logo {
+    height: 80px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+/* ABOUT US */
+#about-us p {
+    font-size: 1.1em;
+}
+
+/* BENEFITS */
+#benefits h1 {
+    margin-top: 1.5em;
+}
+
+/* VIDEOS */
+#videos h1{
+    margin-top: 1.5em;
+}
+
+@media (min-width: 1199.98px) {
+    .video {
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+/* LOCATION */
+#location h1{
+    margin-top: 1.5em;
+}
+
+@media (min-width: 1199.98px) {
+    .map {
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+/* FOOTER */
+    #foot {
+        background-color: black;
+        margin-top: 3em;
+    }
+
+    #foot img {
+        height: 200px;
+    }
