@@ -19,11 +19,31 @@
 }
 
 .navbar-item {
-    margin-left: 2em;
     list-style-type: none;
+    margin-left: 2em;
 }
 
 .navbar-link {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .navbar-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .navbar-item {
+        list-style-type: none;
+        margin-left: 0px;
+        margin-bottom: 2em;
+    }
 }

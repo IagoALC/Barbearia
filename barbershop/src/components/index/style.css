@@ -1,0 +1,182 @@
+.index-slogan-container {
+  margin: 2em 5em;
+}
+
+.index-banner {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/*  SLOGAN  */
+.index-slogan {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.index-slogan-title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.index-slogan-message {
+  font-size: 2em;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+/*  ABOUT US    */
+.index-aboutUs {
+  background-color: #212529;
+  padding: 2em;
+}
+
+.index-aboutUs-container {
+  margin: 0px 5em;
+}
+
+.index-aboutUs-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.index-aboutUs-details {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.index-aboutUs-list {
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.index-aboutUs-item:nth-child(n + 2) {
+  margin-top: 2em;
+}
+
+.index-aboutUs-image {
+  width: 50%;
+  border-radius: 50px;
+}
+
+/*  LATEST VIDEO    */
+
+.index-latestVideo {
+  text-align: center;
+}
+
+.index-video-container {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.index-latestVideo-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.index-latestVideo-video {
+  width: 50%;
+  height: 500px;
+}
+
+/*  MOBILE  */
+@media (max-width: 576px) {
+  /*  BANNER  */
+
+  .index-banner {
+    height: 50%;
+  }
+
+  .index-slogan-container {
+    margin: 2em 0px;
+    height: calc(100vh - 260px - 2em);
+  }
+
+  /*  ABOUT US  */
+  .index-aboutUs {
+    padding: 2em;
+  }
+
+  .index-aboutUs-container {
+    margin: 0px;
+  }
+
+  .index-aboutUs-title {
+    font-size: 1.5em;
+  }
+
+  .index-aboutUs-details {
+    flex-direction: column;
+  }
+
+  .index-aboutUs-list {
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .index-aboutUs-item:nth-child(n + 2) {
+    margin-top: 1.5em;
+  }
+
+  .index-aboutUs-image {
+    width: 100%;
+  }
+
+  /*  LATEST VIDEO    */
+  .index-latestVideo {
+    text-align: center;
+  }
+
+
+  .index-latestVideo-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .index-latestVideo-video {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1200px) {
+  .index-latestVideo-video {
+    width: 75%;
+    height: 500px;
+  }
+
+  .index-aboutUs-image {
+    width: 75%;
+  }
+
+  .index-aboutUs-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .index-aboutUs-list {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 1.5em;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .index-aboutUs-item:nth-child(n + 2) {
+    margin-top: 1em;
+  }
+}
