@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    background-color: #212529;
+    justify-content: center;
+}
+.footer-logo {
+    width: 200px; 
+    height: 200px;
+}
+
