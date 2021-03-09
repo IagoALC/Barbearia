@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 function Navbar({ direction }) {
     return (
         <nav id="navbar-nav">
-            <div class="navbar-container">
+            <div className="navbar-container">
                 <Link to="/"><img src={logo} alt="logo" className="navbar-logo" /></Link>
                 <ul className="navbar-list">
                     <li className="navbar-item"><Link to="/" className="navbar-link">HOME</Link></li>
