@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Index from "./components/index/Index";
 import Services from "./components/servicos/Services";
 import Page404 from "./pages/page404/Page404";
+import Contact from "./components/contacts/Contact";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,6 +25,9 @@ function App() {
           <Route path="/services">
             <Services />
           </Route>
+          <Route path="/contact">
+            <Contact userData = { userData }/>
+          </Route>
           <Route>
             <Page404 />
           </Route>
@@ -32,6 +36,10 @@ function App() {
       </Router>
     </section>
   );
+
+  function userData(data) {
+    console.log(data);
+  }
 }
 
 export default App;
