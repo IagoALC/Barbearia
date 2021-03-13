@@ -1,0 +1,66 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.teste {
+  width: 100%;
+}
+
+.contact-input-text {
+  width: 100%;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0px 0.5em;
+  margin-top: 0.5em;
+}
+
+.contact-form-group {
+  margin: 3em 0px;
+}
+
+.contact-group-radio {
+  margin: 1em 0px;
+}
+.contact-group-radio:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.contact-title-contact {
+  font-size: 1.2em;
+}
+
+.contact-select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.contact-title-time {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.contact-title-email-receiver {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.contact-button {
+  background-color: #212529;
+  border: 1px solid #212529;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  width: 40%;
+  height: 35px;
+}
+.contact-button:hover {
+  transition: 0.5s;
+  width: 42%;
+  height: 37px;
+}
+
+/*# sourceMappingURL=style.css.map */
