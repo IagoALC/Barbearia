@@ -14,8 +14,7 @@
   width: 25%;
   padding: 1em 0px;
 }
-
-.services-box:nth-child(n + 4) {
+.services-box:nth-child(n+4) {
   margin-top: 2em;
 }
 
@@ -54,12 +53,12 @@
     width: 100%;
     margin-bottom: 2em;
   }
-
   .services-box:nth-last-child(1) {
     margin-bottom: 0px;
   }
-
-  .services-box:nth-child(n + 4) {
+  .services-box:nth-child(n+4) {
     margin-top: 0px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

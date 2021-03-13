@@ -1,8 +1,8 @@
 import react from "react";
-import "./style.css";
 import Beard from "../../assets/images/barba.jpg";
 import Hair from "../../assets/images/cabelo.jpg";
 import HairBeard from "../../assets/images/cabelo+barba.jpg";
+import "./css/style.css"
 
 function Services() {
     return (
