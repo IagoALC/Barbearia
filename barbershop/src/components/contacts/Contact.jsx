@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./style.css";
 
 const Contact = ({ userData }) => {
@@ -42,13 +42,13 @@ const Contact = ({ userData }) => {
                 <div className="contact-form-group">
                     <h1 className="contact-title-contact">How do you prefer to be contact?</h1>
                     <div className="contact-group-radio">
-                        <input type="radio" name="contact-radio" id="radio-whatsapp" onClick={radioChange}/> <label for="radio-whatsapp">Whatsapp</label>
+                        <input type="radio" name="contact-radio" id="radio-whatsapp" onClick={radioChange} /> <label for="radio-whatsapp">Whatsapp</label>
                     </div>
                     <div className="contact-group-radio">
-                        <input type="radio" name="contact-radio" id="radio-phone" onClick={radioChange}/> <label for="radio-phone">Cell phone</label>
+                        <input type="radio" name="contact-radio" id="radio-phone" onClick={radioChange} /> <label for="radio-phone">Cell phone</label>
                     </div>
                     <div className="contact-group-radio">
-                        <input type="radio" name="contact-radio" id="radio-email" onClick={radioChange}/> <label for="radio-email">Email</label>
+                        <input type="radio" name="contact-radio" id="radio-email" onClick={radioChange} /> <label for="radio-email">Email</label>
                     </div>
                 </div>
                 <div className="contact-form-group">

@@ -1,0 +1,61 @@
+.index--aboutUs
+    background-color: #212529
+    padding: 3em
+    @include max-576px()
+        padding: 2em
+    &__container
+        margin: 0px 304px
+        @include max-576px()
+            margin: 0px
+        @include min-576px-max-1400px()
+            margin: 0px
+    &__title
+        font-size: 2.5em
+        text-align: center
+        margin-bottom: 2em
+        color: white
+        font-family: "Akaya Telivigala", cursive
+        @include max-576px()
+            font-size: 1.5em
+    &__details
+        display: flex
+        align-items: center
+        text-align: center
+        @include max-576px()
+            flex-direction: column
+        @include min-576px-max-1400px()
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+    &__list
+        width: 50%
+        text-align: center
+        color: white
+        font-size: 1.5em
+        align-items: center
+        &__item:nth-child(n + 2)
+            margin-top: 2em
+            @include max-576px()
+                margin-top: 1.5em
+            @include min-576px-max-1400px()
+                margin-top: 1em
+        @include max-576px()
+            width: 100%
+            font-size: 1.5em
+            margin-bottom: 2em
+        @include min-576px-max-1400px()
+            width: 100%
+            text-align: center
+            color: white
+            font-family: "Akaya Telivigala", cursive
+            font-size: 1.5em
+            align-items: center
+            margin-bottom: 2em
+    &__image
+        width: 50%
+        border-radius: 10px
+        @include max-576px()
+            width: 100%
+        @include min-576px-max-1400px()
+            width: 60%

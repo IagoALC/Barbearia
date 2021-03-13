@@ -1,0 +1,39 @@
+@mixin max-992px()
+    @media (max-width: 992px)
+        @content
+
+@mixin min-993px-max-1400px()
+    @media (max-width: 1400px) and (min-width:993px)
+        @content
+
+.footer
+    background-color: #212529
+    &__container
+        margin: 0px 304px
+        display: flex
+        align-items: center
+        @include max-992px()
+            flex-direction: column
+            margin: 0px
+        @include min-993px-max-1400px()
+            margin: 0px 200px
+    &__div--logo
+        @include max-992px()
+            width: 100%
+            text-align: center
+    &__logo
+        width: 125px
+        height: 125px
+    &__list 
+        display: flex
+        width: 100%
+        justify-content: flex-end
+        @include max-992px()
+            width: 100%
+            justify-content: center
+    &__item:nth-child(2)
+        margin: 0px 1em
+    &__image
+        width: 50px
+        height: 50px
+

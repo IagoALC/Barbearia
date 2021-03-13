@@ -1,0 +1,23 @@
+.index--latestVideo
+    text-align: center
+    @include max-576px()
+        text-align: center
+    &__container
+        margin-top: 5em
+        margin-bottom: 2em
+    &__title
+        font-size: 2.5em
+        margin-bottom: 1em
+        font-family: "Akaya Telivigala", cursive
+        @include max-576px()
+            font-size: 2em
+            margin-bottom: 1em
+    &__video
+        width: 50%
+        height: 500px
+        @include max-576px()
+            width: 80%
+            height: 300px
+        @include min-576px-max-1400px()
+            width: 70%
+            height: 500px

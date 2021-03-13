@@ -1,6 +1,5 @@
 .contact-container {
     display: flex;
-    margin: 0px 5em;
     justify-content: center;
 }
 
@@ -61,7 +60,7 @@
 }
 
 .contact-button:hover {
-    
+    transition: 0.5s;
     width: 42%;
     height: 37px;
 }
