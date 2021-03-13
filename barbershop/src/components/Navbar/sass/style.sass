@@ -1,0 +1,45 @@
+@mixin max-992px()
+    @media (max-width: 992px)
+        @content
+
+@mixin min-993px-max-1400px()
+    @media (max-width: 1400px) and (min-width:993px)
+        @content
+
+.navbar
+    font-family: "Akaya Telivigala", cursive
+    background-color: rgba(0,0,0,0.5)
+    width: 100%
+    &__container
+        display: flex
+        margin: 0px 304px
+        @include max-992px()
+            flex-direction: column
+            text-align: center
+            margin: 0px
+        @include min-993px-max-1400px()
+            margin: 0px 200px
+    &__logo
+        height: 100px
+    &__list
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        width: 100%
+        @include max-992px()
+            display: flex
+            flex-direction: column
+            margin-top: 1em
+    &__item
+        list-style-type: none
+        margin-left: 2em
+        @include max-992px()
+            list-style-type: none
+            margin-left: 0px
+            margin-bottom: 2em
+    &__link
+        color: white
+        text-decoration: none
+        &:hover
+            color: #A9A9A9
+            transition: 0.5s

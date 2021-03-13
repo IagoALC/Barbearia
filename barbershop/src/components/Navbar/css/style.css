@@ -1,0 +1,58 @@
+.navbar {
+  font-family: "Akaya Telivigala", cursive;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.navbar__container {
+  display: flex;
+  margin: 0px 304px;
+}
+@media (max-width: 992px) {
+  .navbar__container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media (max-width: 1400px) and (min-width: 993px) {
+  .navbar__container {
+    margin: 0px 200px;
+  }
+}
+.navbar__logo {
+  height: 100px;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .navbar__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 2em;
+}
+@media (max-width: 992px) {
+  .navbar__item {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-bottom: 2em;
+  }
+}
+.navbar__link {
+  color: white;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  color: #A9A9A9;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */
