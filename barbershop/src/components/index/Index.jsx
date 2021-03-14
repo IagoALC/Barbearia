@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import "./css/style.css";
 import place from "../../assets/images/place.jpg";
 import Video from "../../assets/videos/video.mp4"
-import location from "../../assets/images/location.jpg"
 
 function Index() {
     return (

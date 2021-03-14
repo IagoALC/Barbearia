@@ -19,41 +19,41 @@ const Contact = ({ userData }) => {
     }
 
     return (
-        <div className="contact-container">
+        <div className="contact">
             <form onSubmit={userData(data)}>
-                <div className="contact-form-group">
+                <div className="contact__form--group">
                     <label for="nome">NAME</label>
-                    <input type="text" className="contact-input-text" name="nome" id="nome" onChange={(event) => {
+                    <input type="text" className="contact__input" name="nome" id="nome" onChange={(event) => {
                         setName(event.target.value);
                     }} />
                 </div>
-                <div className="contact-form-group">
+                <div className="contact__form--group">
                     <label for="email">E-MAIL</label>
-                    <input type="email" className="contact-input-text" name="email" id="email" onChange={(event) => {
+                    <input type="email" className="contact__input" name="email" id="email" onChange={(event) => {
                         setEmail(event.target.value);
                     }} />
                 </div>
-                <div className="contact-form-group">
+                <div className="contact__form--group">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="text" className="contact-input-text" name="phone" id="phone" onChange={(event) => {
+                    <input type="text" className="contact__input" name="phone" id="phone" onChange={(event) => {
                         setPhone(event.target.value);
                     }} />
                 </div>
-                <div className="contact-form-group">
-                    <h1 className="contact-title-contact">How do you prefer to be contact?</h1>
-                    <div className="contact-group-radio">
+                <div className="contact__form--group">
+                    <h1 className="contact__title--contact">How do you prefer to be contact?</h1>
+                    <div className="contact__group--radio">
                         <input type="radio" name="contact-radio" id="radio-whatsapp" onClick={radioChange} /> <label for="radio-whatsapp">Whatsapp</label>
                     </div>
-                    <div className="contact-group-radio">
+                    <div className="contact__group--radio">
                         <input type="radio" name="contact-radio" id="radio-phone" onClick={radioChange} /> <label for="radio-phone">Cell phone</label>
                     </div>
-                    <div className="contact-group-radio">
+                    <div className="contact__group--radio">
                         <input type="radio" name="contact-radio" id="radio-email" onClick={radioChange} /> <label for="radio-email">Email</label>
                     </div>
                 </div>
-                <div className="contact-form-group">
-                    <h1 for="time" className="contact-title-time">What time?</h1>
-                    <select name="time" id="time" className="contact-select" onChange={(event) => {
+                <div className="contact__form--group">
+                    <h1 for="time" className="contact__title--time">What time?</h1>
+                    <select name="time" id="time" className="contact__select" onChange={(event) => {
                         setTime(event.target.value);
                     }}>
                         <option value="Morning">Morning</option>
@@ -61,13 +61,13 @@ const Contact = ({ userData }) => {
                         <option value="Evening">Evening</option>
                     </select>
                 </div>
-                <div className="contact-form-group">
+                <div className="contact__form--group">
                     <input type="checkbox" name="email_receiver" id="email_receiver" onChange={(event) => {
                         setEmailReceiver(event.target.checked);
-                    }} /><label for="email_receiver" className="contact-title-email-receiver">Do you want to receive our emails?</label>
+                    }} /><label for="email_receiver" className="contact__email--receiver">Do you want to receive our emails?</label>
                 </div>
-                <div className="contact-form-group">
-                    <button type="submit" className="contact-button" onClick={(event) => event.preventDefault()}>Send</button>
+                <div className="contact__form--group">
+                    <button type="submit" className="contact__button" onClick={(event) => event.preventDefault()}>Send</button>
                 </div>
 
             </form>

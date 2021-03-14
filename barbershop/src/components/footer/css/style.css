@@ -2,37 +2,37 @@
   background-color: #212529;
 }
 .footer__container {
-  margin: 0px 304px;
+  margin: 0px 200px;
   display: flex;
   align-items: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 767.98px) {
   .footer__container {
     flex-direction: column;
     margin: 0px;
   }
 }
-@media (max-width: 1400px) and (min-width: 993px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .footer__container {
-    margin: 0px 200px;
+    margin: 0px 100px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 767.98px) {
   .footer__div--logo {
     width: 100%;
     text-align: center;
   }
 }
 .footer__logo {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
 }
 .footer__list {
   display: flex;
   width: 100%;
   justify-content: flex-end;
 }
-@media (max-width: 992px) {
+@media (max-width: 767.98px) {
   .footer__list {
     width: 100%;
     justify-content: center;

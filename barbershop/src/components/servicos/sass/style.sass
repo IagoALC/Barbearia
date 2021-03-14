@@ -1,51 +1,50 @@
-.services-container
-  margin: 2em 304px
+@mixin small-device()
+    @media (max-width: 767.98px)
+        @content
+@mixin medium-device()
+    @media (min-width:768px) and (max-width: 1199.98px)
+        @content
 
-.services-grid
-  display: flex
-  justify-content: space-around
-  flex-wrap: wrap
-
-.services-box
-  border: 1px solid lightgray
-  border-radius: 20px
-  width: 25%
-  padding: 1em 0px
-
-  &:nth-child(n + 4)
-    margin-top: 2em
-
-.services-text
-  margin-left: 1em
-
-.services-image
-  width: 100%
-
-.services-title
-  font-size: 2em
-  font-weight: 600
-
-.services-msg
-  font-size: 1em
-  margin: 1em 0px
-  font-weight: 600
-
-.services-price
-  color: gray
-  font-size: 1em
-  font-weight: 600
-  margin-top: 2em
-
-@media (max-width: 768px)
-  .services-grid
-    flex-direction: column
-
-  .services-box
+.services
+  margin: 2em 200px
+  @include small-device()
+    margin: 2em 0px
+  @include medium-device()
+    margin: 2em 100px
+  &__container
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
     width: 100%
-    margin-bottom: 2em
-
-    &:nth-last-child(1)
-      margin-bottom: 0px
-
+    @include small-device()
+      flex-direction: column
+  &__box
+    border: 1px solid lightgray
+    border-radius: 20px
+    width: 25%
+    padding: 1em 0px
+    @include small-device()
+      width: 50%
+      margin-left: 25vw
+      &:not(:nth-child(1))
+        margin-top: 2em
+    @include medium-device()
+      width: 30%
     &:nth-child(n + 4)
-      margin-top: 0px
+      margin-top: 2em
+    &__div
+      margin-left: 1em
+    &__image
+      width: 100%
+    &__title
+      font-size: 1.5em
+      font-weight: 600
+    &__msg
+      font-size: 1em
+      margin: 1em 0px
+      font-weight: 600
+    &__price
+      color: gray
+      font-size: 1em
+      font-weight: 600
+      margin-top: 2em
