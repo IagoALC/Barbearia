@@ -1,29 +1,31 @@
 .index--aboutUs
     background-color: #212529
-    padding: 3em
-    @include max-576px()
+    padding: 3em 0px
+    @include small-device()
         padding: 2em
+    @include medium-device()
+        padding: 1px 0px
     &__container
-        margin: 0px 304px
-        @include max-576px()
+        margin: 0px 200px
+        @include small-device()
             margin: 0px
-        @include min-576px-max-1400px()
-            margin: 0px
+        @include medium-device()
+            margin: 100px
     &__title
         font-size: 2.5em
         text-align: center
         margin-bottom: 2em
         color: white
         font-family: "Akaya Telivigala", cursive
-        @include max-576px()
-            font-size: 1.5em
+        @include medium-device()
+            margin-bottom: 1.5em
     &__details
         display: flex
         align-items: center
         text-align: center
-        @include max-576px()
+        @include small-device()
             flex-direction: column
-        @include min-576px-max-1400px()
+        @include medium-device()
             display: flex
             flex-direction: column
             align-items: center
@@ -36,26 +38,20 @@
         align-items: center
         &__item:nth-child(n + 2)
             margin-top: 2em
-            @include max-576px()
+            @include small-device()
                 margin-top: 1.5em
-            @include min-576px-max-1400px()
-                margin-top: 1em
-        @include max-576px()
+            @include medium-device()
+                margin-top: 1.5em
+        @include small-device()
             width: 100%
-            font-size: 1.5em
             margin-bottom: 2em
-        @include min-576px-max-1400px()
+        @include medium-device()
             width: 100%
-            text-align: center
-            color: white
-            font-family: "Akaya Telivigala", cursive
-            font-size: 1.5em
-            align-items: center
             margin-bottom: 2em
     &__image
         width: 50%
         border-radius: 10px
-        @include max-576px()
+        @include small-device()
             width: 100%
-        @include min-576px-max-1400px()
-            width: 60%
+        @include medium-device()
+            width: 100%

@@ -1,18 +1,37 @@
 .index--apresentation
-    margin: 3em 304px
     display: flex
+    margin: 3em 200px
     align-items: center
-    @include max-992px()
+    justify-content: center
+    @include small-device()
+        margin: 3em 0px
         flex-direction: column
-    
-.index--apresentation__image
-    width: 90%
-    border-radius: 10px
-
-.index--apresentation__div--image
-    width: 50%
-.index--apresentation__msg 
-    width: 50%
-    font-size: 2em
-    letter-spacing: 1px
-    line-height: 1.5em
+        padding: 0px 2em
+    @include medium-device()
+        margin: 100px
+        flex-direction: column
+    &__img
+        width: 50%
+        border-radius: 10px
+        @include small-device()
+            margin-bottom: 3em
+            width: 100%
+        @include medium-device()
+            margin-bottom: 3em
+            width: 100%
+    &__msg
+        font-size: 2em
+        margin-left: 2em
+        line-height: 1.25em
+        @include small-device()
+            font-size: 1.75em
+            line-height: 1.25em
+            margin-left: 0px
+        @include medium-device()
+            line-height: 1.5em
+            margin-left: 0px
+        span 
+            font-family: "Akaya Telivigala", cursive
+            font-size: 1.75em
+            @include small-device()
+                font-size: 1.5em

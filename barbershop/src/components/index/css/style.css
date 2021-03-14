@@ -19,12 +19,12 @@ video {
 .index--banner__slogan {
   margin-bottom: 5em;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--banner__slogan {
     margin: 2em 0px;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--banner__slogan {
     margin: 2em 0px;
   }
@@ -40,59 +40,100 @@ video {
   font-size: 2em;
   color: white;
 }
-@media (max-width: 992px) {
+@media (max-width: 767.98px) {
   .index--banner {
     height: calc(100vh - 260px);
   }
 }
 
 .index--apresentation {
-  margin: 3em 304px;
   display: flex;
+  margin: 3em 200px;
   align-items: center;
+  justify-content: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 767.98px) {
   .index--apresentation {
+    margin: 3em 0px;
+    flex-direction: column;
+    padding: 0px 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .index--apresentation {
+    margin: 100px;
     flex-direction: column;
   }
 }
-
-.index--apresentation__image {
-  width: 90%;
+.index--apresentation__img {
+  width: 50%;
   border-radius: 10px;
 }
-
-.index--apresentation__div--image {
-  width: 50%;
+@media (max-width: 767.98px) {
+  .index--apresentation__img {
+    margin-bottom: 3em;
+    width: 100%;
+  }
 }
-
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .index--apresentation__img {
+    margin-bottom: 3em;
+    width: 100%;
+  }
+}
 .index--apresentation__msg {
-  width: 50%;
   font-size: 2em;
-  letter-spacing: 1px;
-  line-height: 1.5em;
+  margin-left: 2em;
+  line-height: 1.25em;
+}
+@media (max-width: 767.98px) {
+  .index--apresentation__msg {
+    font-size: 1.75em;
+    line-height: 1.25em;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .index--apresentation__msg {
+    line-height: 1.5em;
+    margin-left: 0px;
+  }
+}
+.index--apresentation__msg span {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.75em;
+}
+@media (max-width: 767.98px) {
+  .index--apresentation__msg span {
+    font-size: 1.5em;
+  }
 }
 
 .index--aboutUs {
   background-color: #212529;
-  padding: 3em;
+  padding: 3em 0px;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--aboutUs {
     padding: 2em;
   }
 }
-.index--aboutUs__container {
-  margin: 0px 304px;
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .index--aboutUs {
+    padding: 1px 0px;
+  }
 }
-@media (max-width: 576px) {
+.index--aboutUs__container {
+  margin: 0px 200px;
+}
+@media (max-width: 767.98px) {
   .index--aboutUs__container {
     margin: 0px;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__container {
-    margin: 0px;
+    margin: 100px;
   }
 }
 .index--aboutUs__title {
@@ -102,9 +143,9 @@ video {
   color: white;
   font-family: "Akaya Telivigala", cursive;
 }
-@media (max-width: 576px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__title {
-    font-size: 1.5em;
+    margin-bottom: 1.5em;
   }
 }
 .index--aboutUs__details {
@@ -112,12 +153,12 @@ video {
   align-items: center;
   text-align: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--aboutUs__details {
     flex-direction: column;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__details {
     display: flex;
     flex-direction: column;
@@ -135,31 +176,25 @@ video {
 .index--aboutUs__list__item:nth-child(n+2) {
   margin-top: 2em;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--aboutUs__list__item:nth-child(n+2) {
     margin-top: 1.5em;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__list__item:nth-child(n+2) {
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--aboutUs__list {
     width: 100%;
-    font-size: 1.5em;
     margin-bottom: 2em;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__list {
     width: 100%;
-    text-align: center;
-    color: white;
-    font-family: "Akaya Telivigala", cursive;
-    font-size: 1.5em;
-    align-items: center;
     margin-bottom: 2em;
   }
 }
@@ -167,21 +202,21 @@ video {
   width: 50%;
   border-radius: 10px;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--aboutUs__image {
     width: 100%;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--aboutUs__image {
-    width: 60%;
+    width: 100%;
   }
 }
 
 .index--latestVideo {
   text-align: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--latestVideo {
     text-align: center;
   }
@@ -195,7 +230,7 @@ video {
   margin-bottom: 1em;
   font-family: "Akaya Telivigala", cursive;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--latestVideo__title {
     font-size: 2em;
     margin-bottom: 1em;
@@ -204,14 +239,17 @@ video {
 .index--latestVideo__video {
   width: 50%;
   height: 500px;
+  background-color: #292929;
+  padding: 1em;
+  border-radius: 10px;
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .index--latestVideo__video {
     width: 80%;
     height: 300px;
   }
 }
-@media (min-width: 577px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .index--latestVideo__video {
     width: 70%;
     height: 500px;

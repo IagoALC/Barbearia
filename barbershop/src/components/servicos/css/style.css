@@ -48,6 +48,11 @@
 .services__box__div {
   margin-left: 1em;
 }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .services__box__div {
+    margin-left: 0.5em;
+  }
+}
 .services__box__image {
   width: 100%;
 }
