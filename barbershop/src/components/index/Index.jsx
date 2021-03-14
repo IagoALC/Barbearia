@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import "./css/style.css";
 import place from "../../assets/images/place.jpg";
-import Video from "../../assets/videos/video.mp4"
+import Video from "../../assets/videos/video.mp4";
+import location from "../../assets/images/location.jpg"
 
 function Index() {
     return (
@@ -14,6 +15,11 @@ function Index() {
                     <h1 className="index--banner__slogan__title">Barbershop</h1>
                     <p className="index--banner__slogan__message">The best barbershop in the city!</p>
                 </div>
+            </section>
+
+            <section className="index--apresentation">
+                    <img src={location} alt="location" className="index--apresentation__img"/>
+                    <p className="index--apresentation__msg"><span>Barbershop</span> is a full service grooming parlour for the discerning gentleman. We offer a wide variety of services that will certainly make you the talk of the town.</p>
             </section>
 
             <section className="index--aboutUs">

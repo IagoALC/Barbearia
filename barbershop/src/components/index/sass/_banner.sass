@@ -12,9 +12,9 @@
         z-index: -1
     &__slogan
         margin-bottom: 5em
-        @include max-576px()
+        @include small-device()
             margin: 2em 0px
-        @include min-576px-max-1400px()
+        @include medium-device()
             margin: 2em 0px
         &__title
             text-align: center
@@ -25,5 +25,5 @@
         &__message
             font-size: 2em
             color: white
-    @include max-992px()
+    @include small-device()
         height: calc(100vh - 260px)
