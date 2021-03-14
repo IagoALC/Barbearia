@@ -1,34 +1,33 @@
-@mixin max-992px()
-    @media (max-width: 992px)
+@mixin small-device()
+    @media (max-width: 767.98px)
         @content
-
-@mixin min-993px-max-1400px()
-    @media (max-width: 1400px) and (min-width:993px)
+@mixin medium-device()
+    @media (min-width:768px) and (max-width: 1199.98px)
         @content
 
 .footer
     background-color: #212529
     &__container
-        margin: 0px 304px
+        margin: 0px 200px
         display: flex
         align-items: center
-        @include max-992px()
+        @include small-device()
             flex-direction: column
             margin: 0px
-        @include min-993px-max-1400px()
-            margin: 0px 200px
+        @include medium-device()
+            margin: 0px 100px
     &__div--logo
-        @include max-992px()
+        @include small-device()
             width: 100%
             text-align: center
     &__logo
-        width: 125px
-        height: 125px
+        width: 100px
+        height: 100px
     &__list 
         display: flex
         width: 100%
         justify-content: flex-end
-        @include max-992px()
+        @include small-device()
             width: 100%
             justify-content: center
     &__item:nth-child(2)
